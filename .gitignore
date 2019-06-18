@@ -29,3 +29,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore incorrect syntax poke_controller_controller
+/app/controllers/poke_controller_controller.rb
+/app/helpers/poke_controller_helper.rb
+/app/assets/javascripts/poke_controller.coffee
+/app/assets/stylesheets/poke_controller.scss
