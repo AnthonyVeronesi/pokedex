@@ -35,3 +35,4 @@
 /app/helpers/poke_controller_helper.rb
 /app/assets/javascripts/poke_controller.coffee
 /app/assets/stylesheets/poke_controller.scss
+bin/bundle
