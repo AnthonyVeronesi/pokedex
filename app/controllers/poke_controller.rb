@@ -1,22 +1,29 @@
 class PokeController < ApplicationController
   include HTTParty
   require 'oj'
+
   def home
+    @poke = [
+      :name => 'Bulbasaur',
+      :number => 1,
+      :capture_rate => 5,
+      :type => 'grass',
+      :type_2 => 'poison',
+      :shape => 'quadriped',
+      :sprite => 'image'
+    ]
+  end
+
+  def destroy
 
   end
 
-  def create_pokemon_table
-    region_ids = (1..151)
-    region_ids.each do |i|
-      # creates a table for the autofill to refrence, can use the names added by id to then create API string
-      pokemon = HTTParty.post("https://pokeapi.co/api/v2/#{i}")
-
-      @ = []
-      pokemon >> @table
-    end
-    @table
-    # table to be refrenced in PokeController
-  end
+  # def create_pokemon_table(@poke)
+  #   # creates a table for the autofill to refrence, can use the names added by id to then create API string
+  #   table = table
+  #   pokemon = HTTParty.post("https://pokeapi.co/api/v2/#{@poke}").parse
+  #   pokemon >> table
+  # end
 
   def search
     input = :input
@@ -28,4 +35,3 @@ class PokeController < ApplicationController
     render json: pokes
   end
 end
-# will not sync with github

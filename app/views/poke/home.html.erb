@@ -1,4 +1,3 @@
-<h1>Yaaaaaay</h1>
 <!DOCTYPE HTML>
   <head>
     <title>PokeDex</title>
@@ -6,48 +5,26 @@
   </head>
   <body bgcolor="#999999">
     <center>
-    <table width="700" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-      <td>
-        <%= image_tag("poke_banner.jpg")%>
-      </td>
-      </tr>
-    </table>
-    <table width="700" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-      <td align="center">
-        <h1>
-          Welcome to the pokedex!
-        </h1>
-      </td>
-      </tr>
-    </table>
-    <table width="750" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <td>
-          <h2>
-            Choose the Pokemon you want to view information on in the seach bar
-          </h2>
-        </td>
-        <td>
-          <div class="tooltip"><%= image_tag("question.jpg", :size => '25x25' )%>
-            <span class="tooltiptext">
-              Type in the Pokemon you want to view information on in the seach bar. If you're unsure how to spell the name, just put in the first few letters and it will seach for all matches (ie. "Char" should return "Charmander", "Charmeleon", and "Charizard")
-            </span>
-          </div>
-        </td>
-      </tr>
-    </table>
-    <table>
-      <tr>
-        <td>
-          <span id="csoutput"></span>
-          <script src="poke.coffee"></script>
-          <%= form_for :input do |f| %>
-            <%= f.text_field @text %>
-          <% end %>
-        </td>
-      </tr>
-    </table>
+      <table class="alignement_table"><tr><td><%= image_tag("poke_banner.jpg")%></td></tr></table>
+      <table class="alignement_table"><tr><td><h1>Welcome to the pokedex!</h1></td></tr></table>
+      <table class="alignement_table">
+        <tr>
+          <td><h2>Choose the Pokemon you want to view information on in the seach bar</h2></td>
+          <td>
+            <div class="tooltip"><%= image_tag("question.jpg", :size => '25x25' )%>
+              <span class="tooltiptext">
+                Type in the Pokemon you want to view information on in the seach bar.
+                If you're unsure how to spell the name,
+                just put in the first few letters and it will seach for all matches
+                (ie. "Char" should return "Charmander", "Charmeleon", and "Charizard")
+              </span>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <%= javascript_include_tag('poke.js') %>
+      <%= render 'form' %>
+      <%= render 'table' %>
+    </center>
   </body>
 </html>
