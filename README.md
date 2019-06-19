@@ -1,24 +1,6 @@
 # README
+* Ruby version = 2.6.3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* This is a simple web application that utilizes coffeescript to store data on the client, and use that data to autofill a web form.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* When completed, this should be a deployable webpage that will use the pokeAPI to find info on all Kanto region Pokemon. It will be able to autofill the search field by using client stored data that is created on page open. It will have the capability to show results in a table and export those results.
