@@ -1,9 +1,3 @@
-<!DOCTYPE HTML>
-  <head>
-    <title>PokeDex</title>
-    <%= stylesheet_link_tag('application') %>
-  </head>
-  <body bgcolor="#999999">
     <center>
       <table class="alignement_table"><tr><td><%= image_tag("poke_banner.jpg")%></td></tr></table>
       <table class="alignement_table"><tr><td><h1>Welcome to the pokedex!</h1></td></tr></table>
@@ -22,9 +16,6 @@
           </td>
         </tr>
       </table>
-      <%= javascript_include_tag('poke.js') %>
       <%= render 'form' %>
       <%= render 'table' %>
     </center>
-  </body>
-</html>
