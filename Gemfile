@@ -25,7 +25,17 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
+
 # gem 'bcrypt', '~> 3.1.7'
+
+# This gem provides functionality to convert a JSON object into HTML table.
+# gem 'json2table', '~> 1.0', '>= 1.0.7'
+
+# Makes http fun!
+gem 'httparty', '~> 0.13.7'
+
+# The fastest JSON parser and object serializer.
+ gem 'oj', '~> 3.7', '>= 3.7.12'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
