@@ -28,3 +28,4 @@ class PokeController < ApplicationController
     render json: pokes
   end
 end
+# will not sync with github
