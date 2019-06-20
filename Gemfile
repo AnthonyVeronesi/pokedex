@@ -26,6 +26,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 
+# jQuery! For Rails! So great.
+gem 'jquery-rails'
+
 # gem 'bcrypt', '~> 3.1.7'
 
 # This gem provides functionality to convert a JSON object into HTML table.

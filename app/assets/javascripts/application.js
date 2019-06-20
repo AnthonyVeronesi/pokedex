@@ -10,18 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
+//= require jquery_ujs
+//= require jquery
 //= require activestorage
 //= require turbolinks
 //= require_tree .
 //= poke.js
-
-
-$(function(){
-  //JSON, $.getJSON()
-  var pokeapi_url = "http://pokeapi.co/api/v2/generation/1";
-
-  $.getJSON(pokeapi_url).done(function(data){
-    console.log(data);
-  })
-});
