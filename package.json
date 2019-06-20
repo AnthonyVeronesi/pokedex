@@ -1,8 +1,8 @@
-{
   "name": "pokedex",
   "private": true,
   "dependencies": {},
   "devDependencies": {
     "coffeescript": "^2.4.1"
+    "jquery-rails": "latest"
   }
 }
