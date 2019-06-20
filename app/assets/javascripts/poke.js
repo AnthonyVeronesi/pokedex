@@ -1,4 +1,4 @@
-("pokeinput").on("click", function() {
+$("pokeinput").on("click", function() {
   console.log("am I getting here?");
   //JSON, $.getJSON()
   var pokeapi_url = "http://pokeapi.co/api/v2/generation/1";
