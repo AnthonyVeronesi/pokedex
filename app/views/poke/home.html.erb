@@ -1,21 +1,21 @@
-    <center>
-      <table class="alignement_table"><tr><td><%= image_tag("poke_banner.jpg")%></td></tr></table>
-      <table class="alignement_table"><tr><td><h1>Welcome to the pokedex!</h1></td></tr></table>
-      <table class="alignement_table">
-        <tr>
-          <td><h2>Choose the Pokemon you want to view information on in the seach bar</h2></td>
-          <td>
-            <div class="tooltip"><%= image_tag("question.jpg", :size => '25x25' )%>
-              <span class="tooltiptext">
-                Type in the Pokemon you want to view information on in the seach bar.
-                If you're unsure how to spell the name,
-                just put in the first few letters and it will seach for all matches
-                (ie. "Char" should return "Charmander", "Charmeleon", and "Charizard")
-              </span>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <%= render 'form' %>
-      <%= render 'table' %>
-    </center>
+<center>
+  <table class="alignement_table"><tr><td><%= image_tag("poke_banner.jpg")%></td></tr></table>
+  <table class="alignement_table"><tr><td><h1>Welcome to the pokedex!</h1></td></tr></table>
+  <table class="alignement_table">
+    <tr>
+      <td><h2>Choose the Pokemon you want to view information on in the seach bar</h2></td>
+      <td>
+        <div class="tooltip"><%= image_tag("question.jpg", :size => '25x25' )%>
+          <span class="tooltiptext">
+            Type in the Pokemon you want to view information on in the seach bar.
+            If you're unsure how to spell the name,
+            just put in the first few letters and it will seach for all matches
+            (ie. "Char" should return "Charmander", "Charmeleon", and "Charizard")
+          </span>
+        </div>
+      </td>
+    </tr>
+  </table>
+    <%= render 'form' %>
+    <%= render 'table' %>
+</center>
