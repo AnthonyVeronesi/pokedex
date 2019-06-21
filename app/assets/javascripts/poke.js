@@ -5,10 +5,13 @@ $("pokeinput").ready(function() {
 
   $.getJSON(pokeapi_url).done(function(data){
     console.log(data);
+    poke_names = []
     $.each(data.pokemon_species, function(index, pokemon) {
-      var name = pokemon.name.charAt(0).toUpperCase + pokemon.name.slice(1);
+      var name = $("<p>").html(pokemon.name.charAt(0).toUpperCase + pokemon.name.slice(1));
+      // console.log("This is name " + name);
       var par = $("<p>").html("Pokemon species" + (index+1) + " is " + name);
-      par.appendTo("pokemon_table");
+      // console.log("this is par " + par);
+      par.appendTo(poke_names);
     });
   }).fail(function() {
     console.log("Request to pokeAPI failed.");
