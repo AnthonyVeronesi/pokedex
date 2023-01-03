@@ -35,7 +35,7 @@ gem 'jquery-rails'
 # gem 'json2table', '~> 1.0', '>= 1.0.7'
 
 # Makes http fun!
-gem 'httparty', '~> 0.13.7'
+gem 'httparty', '~> 0.21.0'
 
 # The fastest JSON parser and object serializer.
  gem 'oj', '~> 3.7', '>= 3.7.12'
